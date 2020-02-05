@@ -20,6 +20,7 @@ jobs:
   include:
     - stage: test
       script:
+        - node -p -e "require('./maas-schemas/package.json').version === require('./maas-schemas-ts/package.json').version || (console.error('Packages version mismatch'), process.exit(1))"
         - yarn --cwd maas-schemas ci
         - yarn --cwd maas-schemas-ts ci
     - stage: deploy
