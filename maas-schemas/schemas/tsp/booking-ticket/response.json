@@ -17,6 +17,9 @@
     "refreshAt": {
       "$ref": "http://maasglobal.com/core/components/units.json#/definitions/time",
       "description": "Epoch when the ticket needs to be refreshed"
+    },
+    "reason": {
+      "$ref": "http://maasglobal.com/core/components/errors.json#/definitions/reason"
     }
   },
   "required": ["ticket", "type", "contentType"],

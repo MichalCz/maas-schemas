@@ -35,6 +35,9 @@
     },
     "customer": {
       "$ref": "http://maasglobal.com/core/booking-option.json#/definitions/customer"
+    },
+    "reason": {
+      "$ref": "http://maasglobal.com/core/components/errors.json#/definitions/reason"
     }
   },
   "required": ["tspId", "state", "meta", "terms", "token", "tspProduct"],
